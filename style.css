@@ -49,7 +49,7 @@ hr {
 
 @media only screen and (max-device-width: 480px) {
     .container {
-        font-size: 14px;
+        font-size: 20px;
         border: 10px solid #d3d0ca;
         border-radius: 15px;
         text-align: center;
@@ -58,6 +58,7 @@ hr {
         width: 100%;
     }
     #inner_cont {
+        margin-top: 20%;
         margin-left: 20%;
         margin-right: 20%;
         color: white;
