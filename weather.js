@@ -39,7 +39,7 @@ $(document).ready(function () {
                     } else {
                         if (data.weather[0].icon == '50d'){
                             $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/fog.jpg')");
-                        } else if (data.weather[0].icon == '02d' || data.weather[0].icon == '03d'){
+                        } else if (data.weather[0].icon == '02d' || data.weather[0].icon == '03d' || data.weather[0].icon == '04d'){
                             $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/cloudy.jpeg')");
                         } else if (data.weather[0].icon == '09d' || data.weather[0].icon == '10d'){
                             $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/rain.jpeg')");

@@ -7,10 +7,12 @@ html, body {
 #title {
     text-align: center;
 }
-
+h1{
+    margin-bottom: 3%;
+}
 .container {
     font-size: 24px;
-    margin-top: 3%;
+    /*margin-top: 3%;*/
     border: 10px solid #d3d0ca;
     border-radius: 15px;
     text-align: center;
