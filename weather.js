@@ -65,9 +65,9 @@ $(document).ready(function () {
                 return 'Sunny';
             case (cloudPercentage > 20 && cloudPercentage <= 35):
                 return 'Mostly Sunny';
-            case (cloudPercentage > 35 && cloudPercentage <= 70):
+            case (cloudPercentage > 35 && cloudPercentage <= 60):
                 return 'Partly Cloudy';
-            case (cloudPercentage > 70 && cloudPercentage <= 85):
+            case (cloudPercentage > 60 && cloudPercentage <= 85):
                 return 'Mostly Cloudy';
             default:
                 return 'Cloudy';
