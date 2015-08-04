@@ -19,7 +19,7 @@ h1{
     padding: 3%;
     height: 60%;
     width: 60%;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #err {

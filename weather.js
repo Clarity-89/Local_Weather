@@ -40,11 +40,11 @@ $(document).ready(function () {
                         if (data.weather[0].icon == '50d'){
                             $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/fog.jpg')");
                         } else if (data.weather[0].icon == '02d' || data.weather[0].icon == '03d' || data.weather[0].icon == '04d'){
-                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/cloudy.jpeg')");
+                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/cloudy.jpg')");
                         } else if (data.weather[0].icon == '09d' || data.weather[0].icon == '10d'){
-                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/rain.jpeg')");
+                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/rain.jpg')");
                         } else if (data.weather[0].icon == '13d'){
-                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/snow.jpeg')");
+                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/snow.jpg')");
                         } else {
                             $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/sun.jpg')");
                         }
