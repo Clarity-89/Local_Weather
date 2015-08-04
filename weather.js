@@ -34,7 +34,7 @@ $(document).ready(function () {
                     // Change background image based on the time of a day and weather conditions
                     var time = new Date().getHours();
                     console.log(time);
-                   if (time < 5 || time > 22){
+                   if (time < 5 || time >= 22){
                         $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/moon.jpg')");
                     } else {
                         if (data.weather[0].icon == '50d'){
