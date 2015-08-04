@@ -31,6 +31,25 @@ $(document).ready(function () {
                     });
                     el.html(context);
 
+                    // Change background image based on the time of a day and weather conditions
+                    var time = new Date().getHours();
+                    console.log(time);
+                   if (time < 5 || time > 22){
+                        $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/moon.jpg')");
+                    } else {
+                        if (data.weather[0].icon == '50d'){
+                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/fog.jpg')");
+                        } else if (data.weather[0].icon == '02d' || data.weather[0].icon == '03d'){
+                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/cloudy.jpeg')");
+                        } else if (data.weather[0].icon == '09d' || data.weather[0].icon == '10d'){
+                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/rain.jpeg')");
+                        } else if (data.weather[0].icon == '13d'){
+                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/snow.jpeg')");
+                        } else {
+                            $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/sun.jpg')");
+                        }
+                    }
+
                 })
                 .fail(function () {
                     el.append($('<div id="err"></div>').text('Could not get the data at the moment. Please try again later.'));

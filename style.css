@@ -15,9 +15,8 @@ html, body {
     border-radius: 15px;
     text-align: center;
     padding: 3%;
-    height: 50%;
-    width: 50%;
-    background: url('http://www.beyondbodyworkco.com/wp-content/uploads/2013/01/Sunny-Summer-Day.jpg');
+    height: 60%;
+    width: 60%;
     background-size: cover;
 }
 
@@ -27,7 +26,6 @@ html, body {
 
 #inner_cont {
     background-color: rgba(0, 0, 0, .6);
-    /*width: 50%;*/
     margin-left: 30%;
     margin-right: 30%;
     color: white;
