@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Local Weather</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
@@ -19,7 +20,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
 <script id="weather_display" type="text/x-handlebars-template">
 
-    {{city}}, {{country}} <br> <img src="{{image}}"> <br> {{temperatureC}}&deg;C ({{temperatureF}}&deg;F)<br> {{clouds}}
+    {{city}}, {{country}} <br> <img src="{{image}}"> <br> <span id="temp">{{temperatureC}}&deg;C ({{temperatureF}}&deg;F)</span><br> {{clouds}}
     <br> {{wind}}
 
 

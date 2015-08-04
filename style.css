@@ -1,13 +1,14 @@
 html, body {
     height: 100%;
     background-color: rgba(232, 232, 232, 0.6);
+    font-family: Helvetica, sans-serif;
 }
 
-#title{
+#title {
     text-align: center;
 }
 
-.container{
+.container {
     font-size: 24px;
     margin-top: 3%;
     border: 10px solid #d3d0ca;
@@ -20,15 +21,40 @@ html, body {
     background-size: cover;
 }
 
-#err{
+#err {
     color: red;
 }
 
-#inner_cont{
+#inner_cont {
     background-color: rgba(0, 0, 0, .6);
     /*width: 50%;*/
     margin-left: 30%;
     margin-right: 30%;
     color: white;
     font-size: 24px;
+}
+
+#temp {
+    font-size: 30px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .container {
+        font-size: 14px;
+        border: 10px solid #d3d0ca;
+        border-radius: 15px;
+        text-align: center;
+        padding: 3%;
+        height: 100%;
+        width: 100%;
+    }
 }
