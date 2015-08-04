@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Weather</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1 id="title">Your Local Weather</h1>
+
+<div class="container" id="cont">
+    <div id="inner_cont">
+
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+<script id="weather_display" type="text/x-handlebars-template">
+
+    {{city}}, {{country}} <br> <img src="{{image}}"> <br> {{temperatureC}}&deg;C ({{temperatureF}}&deg;F)<br> {{clouds}}
+    <br> {{wind}}
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="weather.js"></script>
+</body>
+</html>
