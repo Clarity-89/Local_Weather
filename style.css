@@ -56,6 +56,7 @@ hr {
         padding: 3%;
         height: 100%;
         width: 100%;
+        background-size: cover;
     }
     #inner_cont {
         margin-top: 20%;
