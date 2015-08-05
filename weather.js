@@ -62,8 +62,10 @@ $(document).ready(function () {
     // source: http://www.theweatherprediction.com/habyhints/189/
     function cloudiness(cloudPercentage) {
         switch (true) {
-            case (cloudPercentage <= 20):
+            case (cloudPercentage <= 10):
                 return 'Sunny';
+            case (cloudPercentage > 10 && cloudPercentage <= 20):
+                return 'Fair';
             case (cloudPercentage > 20 && cloudPercentage <= 35):
                 return 'Mostly Sunny';
             case (cloudPercentage > 35 && cloudPercentage <= 60):
