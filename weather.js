@@ -31,7 +31,7 @@ $(document).ready(function () {
                     });
                     el.html(context);
 
-                    console.log(data.weather[0].icon[data.weather[0].icon.length - 1]);
+                    console.log(data.weather[0].icon);
                     setBackground(data.weather[0].icon);
                     $(".loading").fadeOut("slow");
 
@@ -47,7 +47,7 @@ $(document).ready(function () {
     function cloudiness(cloudPercentage) {
         switch (true) {
             case (cloudPercentage <= 10):
-                return 'Sunny';
+                return 'Clear sky';
             case (cloudPercentage > 10 && cloudPercentage <= 20):
                 return 'Fair';
             case (cloudPercentage > 20 && cloudPercentage <= 35):
@@ -71,7 +71,7 @@ $(document).ready(function () {
                 $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/fog.jpg')");
             } else if (icon == '02d' || icon == '03d' || icon == '04d') {
                 $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/cloudy1.jpg')");
-            } else if (icon == '09d' || icon == '10d') {
+            } else if (icon == '09d' || icon == '10d' || icon == '11d') {
                 $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/rain.jpg')");
             } else if (icon == '13d') {
                 $(".container").css("background-image", "url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/snow.jpg')");
