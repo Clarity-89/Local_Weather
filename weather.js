@@ -12,7 +12,7 @@ $(document).ready(function () {
             var lat = pos.coords.latitude;
             var long = pos.coords.longitude;
             // Create a url for a GET request
-            var url = 'http://api.openweathermap.org/data/2.5/weather?' + 'lat=' + lat + '&lon=' + long + '&units=metric';
+            var url = 'http://api.openweathermap.org/data/2.5/weather?' + 'lat=' + lat + '&lon=' + long + '&units=metric' + '&APPID=435b46fa1cb21702b91736f300312c5c';
             $.getJSON(url)
                 .done(function (data) {
 
